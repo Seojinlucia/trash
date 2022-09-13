@@ -4,23 +4,60 @@
 <title>TRASH1 - trash</title>
 <meta charset="utf-8">
 <style>
+body{
+  margin:0;
+}
  a {
    color:black;
    text-decoration: none;
  }
+ .saw {
+   color: gray;
+ }
+ #active{
+   color : red;
+ }
+ h1 {
+   font-size: 60px;
+   text-align: center;
+   border-bottom: 1px solid gray;
+   margin:0;
+   padding: 40px;
+  }
+  ol{
+  border-right: 1px solid gray;
+  width:220px;
+  padding:20px;
+  margin-top: 0;
+  margin-left: 20px;
+  }
+  #grid{
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  }
+  #grid ol{
+  padding-left: 33px;
+  }
+  #grid #article{
+  padding-left: 25px;
+  }
+
+
 </style>
 
 </head>
 
 
 <body>
-  <h1><a href="index.html"><font color="red"> 쓰레기 종결자</font></a></h1>
+  <h1><a href="index.html"> 쓰레기 종결자</font></a></h1>
+    <div id="grid">
   <ol>
     <li><a href="1.html"
-        style="color:salmon;text-decoration:underline"> 전국 생활쓰레기 배출 정보</a></li>
-    <li><a href="2.html"> 종량제 봉투 정보</a></li>
-    <li><a href="3.html"> 대형 폐기물 처리 정보</a></li>
+        class="saw" id="active"> 전국 생활쓰레기 배출 정보</a></li>
+    <li><a href="2.html"class="saw"> 종량제 봉투 정보</a></li>
+    <li><a href="3.html"class="saw"> 대형 폐기물 처리 정보</a></li>
   </ol>
+  <div id="article">
 
 <h2>전국 생활쓰레기 배출 정보</h2>
 <u>배출장소, 배출요일 등</u>을 제공합니다.
@@ -46,10 +83,12 @@
 <img src="trash1.jpg" wiidth="100%">
 
 <p>
-
+  </div>
+    </div>
 
 
   <div id="disqus_thread"></div>
+
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
